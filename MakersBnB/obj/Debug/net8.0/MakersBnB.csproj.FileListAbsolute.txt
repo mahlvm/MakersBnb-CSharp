@@ -28,3 +28,4 @@
 /Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/obj/Debug/net8.0/MakersBnB.pdb
 /Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/obj/Debug/net8.0/MakersBnB.genruntimeconfig.cache
 /Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/obj/Debug/net8.0/ref/MakersBnB.dll
+/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/obj/Debug/net8.0/MakersBnB.sourcelink.json
