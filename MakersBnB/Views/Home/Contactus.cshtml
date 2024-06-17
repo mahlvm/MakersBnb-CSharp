@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Contactus";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contactus</h1>
+    <ul>
+        @{
+            string[] contactus = new string[2] { "anisha@makersbnb.com", "jonas@makersbnb.com" };
+
+            foreach (string person in contactus) {
+            <article>@person</article>
+            }
+        }
+    </ul>
+</div>
