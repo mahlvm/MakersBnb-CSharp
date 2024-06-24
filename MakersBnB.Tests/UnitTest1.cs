@@ -25,4 +25,6 @@ public class Tests : PageTest
 
         Expect(Page.GetByText("Welcome to MakersBnB!")).ToBeVisibleAsync();
     }
+
+    
 }

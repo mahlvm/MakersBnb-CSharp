@@ -4,39 +4,40 @@ using Microsoft.Extensions.Logging;
 
 namespace MakersBnB.Controllers
 {
-    public class SpacesController : Controller
+    public class UserController : Controller
     {
         private readonly ILogger<SpacesController> _logger;
 
-        public SpacesController(ILogger<SpacesController> logger)
+        public UserController(ILogger<SpacesController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            var spaces = dbContext.Spaces.ToList();
-            return View(spaces);
+            
+            return View();
         }
 
-        [Route("/Spaces/New")]
+
+
+        [Route("/New")]
         public IActionResult New()
         {
             return View();
         }
 
-        [Route("/Spaces")]
+        [Route("/Users")]
         [HttpPost]
-        public IActionResult Create(Space space)
+        public IActionResult Create(User user)
         {   
         MakersBnBDbContext dbContext = new MakersBnBDbContext();
         // Here's where we finally use the dbContext
-        dbContext.Spaces.Add(space);
+        dbContext.User.Add(user);
         dbContext.SaveChanges();
 
         // redirect to "/Spaces"
         return new RedirectResult("/Spaces");
         }
     }
-}
+}   

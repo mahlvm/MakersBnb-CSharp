@@ -1,13 +1,37 @@
-    <ul>
-    @{
-        foreach (string name in ViewBag.Names) {
-        <li>@name</li>
-        }
-    }
-    </ul>
-<h2>Space Details</h2>
-<div>
-    <p><strong>Name:</strong> @ViewBag.Space.Name</p>
-    <p><strong>Description:</strong> @ViewBag.Space.Description</p>
-    <p><strong>Price:</strong> @ViewBag.Space.Price</p>
-</div>
+@model IEnumerable<MakersBnB.Models.Space>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Spaces</title>
+</head>
+<body>
+    <h1>List of Spaces</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Bedrooms</th>
+                <th>Rules</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var space in Model)
+            {
+                <tr>
+                    <td>@space.Name</td>
+                    <td>@space.Description</td>
+                    <td>@space.Price</td>
+                    <td>@space.Bedrooms</td>
+                    <td>@space.Rules</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</body>
+</html>
