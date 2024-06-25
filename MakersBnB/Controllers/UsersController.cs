@@ -4,24 +4,24 @@ using Microsoft.Extensions.Logging;
 
 namespace MakersBnB.Controllers
 {
-    public class UserController : Controller
+    public class UsersController : Controller
     {
-        private readonly ILogger<SpacesController> _logger;
+        private readonly ILogger<UsersController> _logger;
 
-        public UserController(ILogger<SpacesController> logger)
+        public UsersController(ILogger<UsersController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            
+            // ViewBag.Space = new Space("a house", "a house in a place", 100);
             return View();
         }
 
 
 
-        [Route("/New")]
+        // [Route("/Users/New")]
         public IActionResult New()
         {
             return View();
@@ -33,7 +33,7 @@ namespace MakersBnB.Controllers
         {   
         MakersBnBDbContext dbContext = new MakersBnBDbContext();
         // Here's where we finally use the dbContext
-        dbContext.User.Add(user);
+        dbContext.Users.Add(user);
         dbContext.SaveChanges();
 
         // redirect to "/Spaces"

@@ -5,7 +5,7 @@ public class MakersBnBDbContext : DbContext
 {
     // Representa a tabela Spaces no banco de dados
     internal DbSet<Space>? Spaces { get; set; }
-    internal DbSet<User>? User { get; set; }
+    internal DbSet<User>? Users { get; set; }
 
     // Caminho para o banco de dados
     internal string? DbPath { get; }
