@@ -1,6 +1,7 @@
 using MakersBnB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MakersBnB.ActionFilters;
 
 namespace MakersBnB.Controllers
 {
@@ -21,6 +22,7 @@ namespace MakersBnB.Controllers
         }
 
         [Route("/Spaces/New")]
+        [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult New()
         {
             return View();
@@ -28,6 +30,7 @@ namespace MakersBnB.Controllers
 
         [Route("/Spaces")]
         [HttpPost]
+        [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult Create(Space space)
         {   
         MakersBnBDbContext dbContext = new MakersBnBDbContext();

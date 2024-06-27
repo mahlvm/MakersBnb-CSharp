@@ -2,6 +2,7 @@ using MakersBnB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
+
 namespace MakersBnB.Controllers
 {
     public class SessionsController : Controller

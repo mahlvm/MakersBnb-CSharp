@@ -16,17 +16,18 @@ namespace MakersBnB.Controllers
 
         public IActionResult Index()
         {
-            var model = new HomeViewModel
-            {
-                WelcomeMessage = "Welcome to our team page!",
-                Reviews = new List<string> { "Review 1", "Review 2" }
-            };
-            return View(model);
+            return Redirect("/Sessions/New");
         }
 
         public IActionResult Team()
         {
             return View();
+        }
+
+        public IActionResult CreateAccount()
+        {
+
+            return Redirect("/Users/New");
         }
 
 

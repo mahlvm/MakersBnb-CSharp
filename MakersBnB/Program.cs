@@ -10,6 +10,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// ** AUTH FILTER CONFIG **
+builder.Services.AddScoped<MakersBnB.ActionFilters.AuthenticationFilter>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
