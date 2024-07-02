@@ -11,7 +11,11 @@ public class Space
     public int Bedrooms { get; set; }
     public string Rules{get; set;}
 
-    
+    public int UserId { get; set; } // Foreign key for User
+    public User User { get; set; } = null!; // Navigation property to User
+
+    public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>(); // Collection of reservations
+
 
     public Space(string name, string description, int price, int bedrooms, string rules) {
         this.Name = name;

@@ -34,7 +34,7 @@ namespace MakersBnB.Controllers
         public IActionResult Create(Space space)
         {   
         MakersBnBDbContext dbContext = new MakersBnBDbContext();
-        // Here's where we finally use the dbContext
+        
         dbContext.Spaces.Add(space);
         dbContext.SaveChanges();
 
