@@ -11,6 +11,8 @@ public class Space
     public int Bedrooms { get; set; }
     public string Rules{get; set;}
 
+    
+
     public Space(string name, string description, int price, int bedrooms, string rules) {
         this.Name = name;
         this.Description = description;
