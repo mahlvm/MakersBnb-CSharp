@@ -12,6 +12,11 @@
     <p>Bedrooms: @Model.Bedrooms</p>
     <p>Rules: @Model.Rules</p>
 
+    <form method="get" action="/reservations/new">
+        <input type="hidden" name="spaceId" value="@Model.Id" />
+        <button type="submit">Reserve</button>
+    </form>
+
     
 </body>
 </html>

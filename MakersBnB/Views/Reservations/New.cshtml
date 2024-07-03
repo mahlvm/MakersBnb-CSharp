@@ -1,0 +1,43 @@
+@model MakersBnB.Models.Reservation
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Reservation</title>
+</head>
+<body>
+    <h1>Create Reservation</h1>
+
+    <form asp-action="Create" method="post">
+        <div>
+            <label for="SpaceId">Space</label>
+            <select id="SpaceId" name="SpaceId">
+                @foreach (var space in ViewBag.Spaces)
+                {
+                    <option value="@space.Id">@space.Name</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label for="UserId">User</label>
+            <select id="UserId" name="UserId">
+                @foreach (var user in ViewBag.Users)
+                {
+                    <option value="@user.Id">@user.Email</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label for="StartDate">Start Date</label>
+            <input type="date" id="StartDate" name="StartDate" />
+        </div>
+        <div>
+            <label for="EndDate">End Date</label>
+            <input type="date" id="EndDate" name="EndDate" />
+        </div>
+        <div>
+            <input type="submit" value="Create" />
+        </div>
+    </form>
+</body>
+</html>

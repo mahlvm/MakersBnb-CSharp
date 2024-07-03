@@ -1,40 +1,52 @@
 using MakersBnB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MakersBnB.ActionFilters;
 
 namespace MakersBnB.Controllers
 {
     public class ReservationsController : Controller
     {
-        private readonly ILogger<ReservationsController> _logger;
-        private readonly MakersBnBDbContext _dbContext;
+        private readonly ILogger<SpacesController> _logger;
 
-        public ReservationsController(ILogger<ReservationsController> logger)
+        public ReservationsController(ILogger<SpacesController> logger)
         {
             _logger = logger;
-    
         }
 
         public IActionResult Index()
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            var reservation = dbContext.Reservations.ToList();
-            return View(reservation);
+            var reservations = dbContext.Reservations.ToList();
+            return View(reservations);
         }
 
+        [Route("/Reservations/New")]
         public IActionResult New()
         {
-            ViewBag.Spaces = _dbContext.Spaces.ToList();
-            ViewBag.Users = _dbContext.Users.ToList();
+            MakersBnBDbContext dbContext = new MakersBnBDbContext();
+            ViewBag.Spaces = dbContext.Spaces.ToList();
+            ViewBag.Users = dbContext.Users.ToList();
             return View();
         }
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
 
+        [Route("/Reservations")]
         [HttpPost]
+        [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult Create(Reservation reservation)
         {
-            _dbContext.Reservations.Add(reservation);
-            _dbContext.SaveChanges();
-            return RedirectToAction("Index");
+            MakersBnBDbContext dbContext = new MakersBnBDbContext();
+            dbContext.Reservations.Add(reservation);
+            dbContext.SaveChanges();
+
+            return new RedirectResult("Index");
         }
+
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+        
+        
+
+
     }
 }
