@@ -14,7 +14,7 @@
             <select id="SpaceId" name="SpaceId">
                 @foreach (var space in ViewBag.Spaces)
                 {
-                    <option value="@space.Id">@space.Name</option>
+                    <option value="@space.Id" @(space.Id == ViewBag.SelectedSpace ? "selected" : "")>@space.Name</option>
                 }
             </select>
         </div>
@@ -29,11 +29,11 @@
         </div>
         <div>
             <label for="StartDate">Start Date</label>
-            <input type="date" id="StartDate" name="StartDate" />
+            <input type="date" id="StartDate" name="StartDate" value="@DateTime.UtcNow.ToString("yyyy-MM-dd")" />
         </div>
         <div>
             <label for="EndDate">End Date</label>
-            <input type="date" id="EndDate" name="EndDate" />
+            <input type="date" id="EndDate" name="EndDate" value="@DateTime.UtcNow.AddDays(1).ToString("yyyy-MM-dd")" />
         </div>
         <div>
             <input type="submit" value="Create" />

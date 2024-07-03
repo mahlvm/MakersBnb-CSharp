@@ -37,10 +37,15 @@ namespace MakersBnB.Controllers
         public IActionResult Create(Reservation reservation)
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
+            reservation.StartDate = DateTime.SpecifyKind(reservation.StartDate, DateTimeKind.Utc);
+            reservation.EndDate = DateTime.SpecifyKind(reservation.EndDate, DateTimeKind.Utc);
+
             dbContext.Reservations.Add(reservation);
             dbContext.SaveChanges();
 
             return new RedirectResult("Index");
+
+
         }
 
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//

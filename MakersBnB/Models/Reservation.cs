@@ -1,19 +1,25 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-
 namespace MakersBnB.Models
 {
     public class Reservation
     {
-        [Key]
         public int Id { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public int SpaceId { get; set; }
+        public Space Space { get; set; } = null!;
+        public int UserId { get; set; }
+        public User User { get; set; } = null!;
 
-        public int SpaceId { get; set; } // Foreign key for Space
-        public Space Space { get; set; } = null!; // Navigation property to Space
+        private DateTime _startDate;
+        public DateTime StartDate
+        {
+            get => _startDate;
+            set => _startDate = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
 
-        public int UserId { get; set; } // Foreign key for User
-        public User User { get; set; } = null!; // Navigation property to User
+        private DateTime _endDate;
+        public DateTime EndDate
+        {
+            get => _endDate;
+            set => _endDate = DateTime.SpecifyKind(value, DateTimeKind.Utc);
+        }
     }
 }
