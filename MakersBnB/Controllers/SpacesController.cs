@@ -27,19 +27,48 @@ namespace MakersBnB.Controllers
         {
             return View();
         }
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
 
         [Route("/Spaces")]
         [HttpPost]
         [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult Create(Space space)
-        {   
-        MakersBnBDbContext dbContext = new MakersBnBDbContext();
-        
-        dbContext.Spaces.Add(space);
-        dbContext.SaveChanges();
+        {
+            // Obtém o UserId da sessão
+            int? userId = HttpContext.Session.GetInt32("user_id");
+            
+            if (userId == null)
+            {
+                // Se o usuário não está autenticado, redireciona para a página de login
+                return new RedirectResult("/Sessions/New");
+            }
 
-        // redirect to "/Spaces"
-        return new RedirectResult("/Spaces");
+            space.UserId = userId.Value; // Define o UserId do Space
+
+            MakersBnBDbContext dbContext = new MakersBnBDbContext();
+            dbContext.Spaces.Add(space);
+            dbContext.SaveChanges();
+
+            return new RedirectResult("/Spaces");
         }
+
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
+        
+        
+        [Route("Spaces/{id}")]
+        public IActionResult Details(int id)
+        {
+            MakersBnBDbContext dbContext = new MakersBnBDbContext();
+            var space = dbContext.Spaces.Find(id);
+            if (space == null)
+            {
+                return NotFound();
+            }
+
+            return View(space);
+
+        }
+
+
     }
 }
