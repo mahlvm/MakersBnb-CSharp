@@ -1,23 +1,36 @@
-    <form action="/Spaces" method="post">
-    <fieldset>
-        <legend>List a space</legend>
-        <div>
-        <label>Name <input type="text" name="name" /></label>
-        </div>
-        <div>
-        <label>Description <input type="text" name="description" /></label>
-        </div>
-        <div>
-        <label>Bedrooms <input type="text" name="bedrooms" /></label>
-        </div>
-        <div>
-        <label>Price <input type="text" name="price" /></label>
-        </div>
-        <div>
-        <label>Rules <input type="text" name="rules" /></label>
-        </div>
-        <div>
-        <input type="submit" value="Submit" class="submit" />
-        </div>
-    </fieldset>
+@model MakersBnB.Models.Space
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Space</title>
+</head>
+<body>
+    <form action="/Spaces" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>List a space</legend>
+            <div>
+                <label>Name <input type="text" name="Name" /></label>
+            </div>
+            <div>
+                <label>Description <input type="text" name="Description" /></label>
+            </div>
+            <div>
+                <label>Bedrooms <input type="number" name="Bedrooms" /></label>
+            </div>
+            <div>
+                <label>Price <input type="number" name="Price" /></label>
+            </div>
+            <div>
+                <label>Rules <input type="text" name="Rules" /></label>
+            </div>
+            <div>
+                <label>Photo <input type="file" name="Photo" /></label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+        </fieldset>
     </form>
+</body>
+</html>

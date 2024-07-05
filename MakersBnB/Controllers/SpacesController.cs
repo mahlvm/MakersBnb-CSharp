@@ -2,6 +2,9 @@ using MakersBnB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MakersBnB.ActionFilters;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System;
 
 namespace MakersBnB.Controllers
 {
@@ -27,12 +30,11 @@ namespace MakersBnB.Controllers
         {
             return View();
         }
-// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
 
         [Route("/Spaces")]
         [HttpPost]
         [ServiceFilter(typeof(AuthenticationFilter))]
-        public IActionResult Create(Space space)
+        public IActionResult Create(Space space, IFormFile Photo)
         {
             // Obtém o UserId da sessão
             int? userId = HttpContext.Session.GetInt32("user_id");
@@ -41,6 +43,26 @@ namespace MakersBnB.Controllers
             {
                 // Se o usuário não está autenticado, redireciona para a página de login
                 return new RedirectResult("/Sessions/New");
+            }
+
+            if (Photo != null && Photo.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                var uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(Photo.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                // Certifique-se de que a pasta de uploads existe
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    Photo.CopyTo(fileStream);
+                }
+
+                space.PhotoPath = "/uploads/" + uniqueFileName;
             }
 
             space.UserId = userId.Value; // Define o UserId do Space
@@ -52,9 +74,6 @@ namespace MakersBnB.Controllers
             return new RedirectResult("/Spaces");
         }
 
-// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-        
-        
         [Route("Spaces/{id}")]
         public IActionResult Details(int id)
         {
@@ -66,9 +85,6 @@ namespace MakersBnB.Controllers
             }
 
             return View(space);
-
         }
-
-
     }
 }
