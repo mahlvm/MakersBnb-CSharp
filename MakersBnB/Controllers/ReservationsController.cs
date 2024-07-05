@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MakersBnB.ActionFilters;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace MakersBnB.Controllers
@@ -26,19 +27,31 @@ namespace MakersBnB.Controllers
             return View(reservations);
         }
 
+        [HttpGet]
         [Route("/Reservations/New")]
-        public IActionResult New()
+        public IActionResult New(int? spaceId)
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
             var viewModel = new ReservationViewModel
             {
-                Spaces = dbContext.Spaces.ToList()
+                Spaces = dbContext.Spaces.ToList(),
+                Reservation = new Reservation
+                {
+                    StartDate = DateTime.UtcNow,
+                    EndDate = DateTime.UtcNow
+                }
             };
+
+            if (spaceId.HasValue)
+            {
+                viewModel.Reservation.SpaceId = spaceId.Value;
+            }
+
             return View(viewModel);
         }
 
-        [Route("/Reservations")]
         [HttpPost]
+        [Route("/Reservations/Create")]
         [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult Create(ReservationViewModel viewModel)
         {
@@ -70,13 +83,34 @@ namespace MakersBnB.Controllers
                 return View("New", newViewModel);
             }
 
-            reservation.StartDate = DateTime.SpecifyKind(reservation.StartDate, DateTimeKind.Utc);
-            reservation.EndDate = DateTime.SpecifyKind(reservation.EndDate, DateTimeKind.Utc);
+            try
+            {
+                reservation.StartDate = DateTime.SpecifyKind(reservation.StartDate, DateTimeKind.Utc);
+                reservation.EndDate = DateTime.SpecifyKind(reservation.EndDate, DateTimeKind.Utc);
 
-            dbContext.Reservations.Add(reservation);
-            dbContext.SaveChanges();
+                dbContext.Reservations.Add(reservation);
+                dbContext.SaveChanges();
 
-            return RedirectToAction("Index");
+                return RedirectToAction("Confirmation");
+            }
+            catch
+            {
+                return RedirectToAction("Error");
+            }
+        }
+
+        [HttpGet]
+        [Route("/Reservations/Confirmation")]
+        public IActionResult Confirmation()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("/Reservations/Error")]
+        public IActionResult Error()
+        {
+            return View();
         }
     }
 }

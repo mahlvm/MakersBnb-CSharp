@@ -10,15 +10,6 @@
 
     <form asp-action="Create" method="post">
         <div>
-            <label for="SpaceId">Space</label>
-            <select id="SpaceId" name="Reservation.SpaceId">
-                @foreach (var space in Model.Spaces)
-                {
-                    <option value="@space.Id">@space.Name</option>
-                }
-            </select>
-        </div>
-        <div>
             <label for="StartDate">Start Date</label>
             <input type="date" id="StartDate" name="Reservation.StartDate" value="@Model.Reservation.StartDate.ToString("yyyy-MM-dd")" />
         </div>
@@ -27,6 +18,7 @@
             <input type="date" id="EndDate" name="Reservation.EndDate" value="@Model.Reservation.EndDate.ToString("yyyy-MM-dd")" />
         </div>
         <div>
+            <input type="hidden" name="Reservation.SpaceId" value="@Model.Reservation.SpaceId" />
             <input type="submit" value="Create" />
         </div>
     </form>
