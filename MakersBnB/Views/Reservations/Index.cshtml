@@ -3,33 +3,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>List of Reservations</title>
+    <title>Reservations List</title>
 </head>
 <body>
-    <h1>List of Reservations</h1>
+    <h1>Reservations List</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Space</th>
-                <th>User</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var reservation in Model)
-            {
+    @if (Model != null && Model.Any())
+    {
+        <table>
+            <thead>
                 <tr>
-                    <td>@reservation.Space.Name</td>
-                    <td>@reservation.User.Email</td>
-                    <td>@reservation.StartDate.ToShortDateString()</td>
-                    <td>@reservation.EndDate.ToShortDateString()</td>
+        
+                    <th>Start Date</th>
+                    <th>End Date</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-
-    <a href="@Url.Action("New", "Reservations")">Create New Reservation</a>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model)
+                {
+                    <tr>
+                        <td>@reservation.StartDate.ToString("yyyy-MM-dd")</td>
+                        <td>@reservation.EndDate.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No reservations found.</p>
+    }
 </body>
 </html>

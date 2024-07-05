@@ -2,14 +2,16 @@ using MakersBnB.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MakersBnB.ActionFilters;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace MakersBnB.Controllers
 {
     public class ReservationsController : Controller
     {
-        private readonly ILogger<SpacesController> _logger;
+        private readonly ILogger<ReservationsController> _logger;
 
-        public ReservationsController(ILogger<SpacesController> logger)
+        public ReservationsController(ILogger<ReservationsController> logger)
         {
             _logger = logger;
         }
@@ -17,7 +19,10 @@ namespace MakersBnB.Controllers
         public IActionResult Index()
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            var reservations = dbContext.Reservations.ToList();
+            var reservations = dbContext.Reservations
+                                        .Include(r => r.Space)
+                                        .Include(r => r.User)
+                                        .ToList();
             return View(reservations);
         }
 
@@ -25,35 +30,53 @@ namespace MakersBnB.Controllers
         public IActionResult New()
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            ViewBag.Spaces = dbContext.Spaces.ToList();
-            ViewBag.Users = dbContext.Users.ToList();
-            return View();
+            var viewModel = new ReservationViewModel
+            {
+                Spaces = dbContext.Spaces.ToList()
+            };
+            return View(viewModel);
         }
-// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
 
         [Route("/Reservations")]
         [HttpPost]
         [ServiceFilter(typeof(AuthenticationFilter))]
-        public IActionResult Create(Reservation reservation)
+        public IActionResult Create(ReservationViewModel viewModel)
         {
             MakersBnBDbContext dbContext = new MakersBnBDbContext();
 
-            
+            // Obtém o UserId da sessão
+            int? userId = HttpContext.Session.GetInt32("user_id");
+
+            if (userId == null)
+            {
+                // Se o usuário não está autenticado, redireciona para a página de login
+                return RedirectToAction("New", "Sessions");
+            }
+
+            var reservation = viewModel.Reservation;
+            reservation.UserId = userId.Value;
+
+            // Define o SpaceId da reserva
+            var space = dbContext.Spaces.Find(reservation.SpaceId);
+            if (space == null)
+            {
+                // Se o espaço não existe, redireciona para a página de criação de reserva com erro
+                ModelState.AddModelError("", "Invalid space.");
+                var newViewModel = new ReservationViewModel
+                {
+                    Spaces = dbContext.Spaces.ToList(),
+                    Reservation = reservation
+                };
+                return View("New", newViewModel);
+            }
+
             reservation.StartDate = DateTime.SpecifyKind(reservation.StartDate, DateTimeKind.Utc);
             reservation.EndDate = DateTime.SpecifyKind(reservation.EndDate, DateTimeKind.Utc);
 
             dbContext.Reservations.Add(reservation);
             dbContext.SaveChanges();
 
-            return new RedirectResult("Index");
-
-
+            return RedirectToAction("Index");
         }
-
-// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––//
-        
-        
-
-
     }
 }
