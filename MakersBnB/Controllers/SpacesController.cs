@@ -19,9 +19,11 @@ namespace MakersBnB.Controllers
 
         public IActionResult Index()
         {
-            MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            var spaces = dbContext.Spaces.ToList();
-            return View(spaces);
+            using (var dbContext = new MakersBnBDbContext())
+            {
+                var spaces = dbContext.Spaces.ToList();
+                return View(spaces);
+            }
         }
 
         [Route("/Spaces/New")]
@@ -67,9 +69,11 @@ namespace MakersBnB.Controllers
 
             space.UserId = userId.Value; // Define o UserId do Space
 
-            MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            dbContext.Spaces.Add(space);
-            dbContext.SaveChanges();
+            using (var dbContext = new MakersBnBDbContext())
+            {
+                dbContext.Spaces.Add(space);
+                dbContext.SaveChanges();
+            }
 
             return new RedirectResult("/Spaces");
         }
@@ -77,14 +81,16 @@ namespace MakersBnB.Controllers
         [Route("Spaces/{id}")]
         public IActionResult Details(int id)
         {
-            MakersBnBDbContext dbContext = new MakersBnBDbContext();
-            var space = dbContext.Spaces.Find(id);
-            if (space == null)
+            using (var dbContext = new MakersBnBDbContext())
             {
-                return NotFound();
-            }
+                var space = dbContext.Spaces.Find(id);
+                if (space == null)
+                {
+                    return NotFound();
+                }
 
-            return View(space);
+                return View(space);
+            }
         }
     }
 }

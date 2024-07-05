@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kSdFWQd7cZyIOMB8dSq4IK3Ea6Es9NhiTCad82wIImI=",
+  "Hash": "DtI8O0OIQGL7PAQPhmI9xTHYOn2y8w+PoIu71Gc7Ie8=",
   "Source": "MakersBnB",
   "BasePath": "_content/MakersBnB",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg"
     }
   ]
 }

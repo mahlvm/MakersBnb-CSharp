@@ -16,7 +16,8 @@
                 <th>Price</th>
                 <th>Bedrooms</th>
                 <th>Rules</th>
-
+                <th>Photo</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -29,12 +30,21 @@
                     <td>@space.Bedrooms</td>
                     <td>@space.Rules</td>
                     <td>
+                        @if (!string.IsNullOrEmpty(space.PhotoPath))
+                        {
+                            <img src="@space.PhotoPath" alt="Photo of @space.Name" style="width: 100px; height: auto;" />
+                        }
+                    </td>
+                    <td>
                         <a href="/Spaces/@space.Id">View</a>
                     </td>
                 </tr>
             }
-    
         </tbody>
     </table>
+
+    <div>
+        <a href="/Spaces/New" class="btn btn-primary">Create New Space</a>
+    </div>
 </body>
 </html>

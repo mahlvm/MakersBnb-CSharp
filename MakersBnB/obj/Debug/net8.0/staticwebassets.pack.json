@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg",
+      "PackagePath": "staticwebassets/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MakersBnB.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

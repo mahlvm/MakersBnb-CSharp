@@ -41,6 +41,16 @@ namespace MakersBnB.Controllers
             }
         }
 
+        [Route("/Sessions/Logout")]
+        public IActionResult Logout()
+        {
+            // Remove o usuário da sessão
+            HttpContext.Session.Remove("user_id");
+
+            // Redireciona para a página inicial
+            return RedirectToAction("Index", "Home");
+        }
+
 
     }
 }

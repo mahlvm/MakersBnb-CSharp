@@ -11,6 +11,11 @@
     <p>Price: @Model.Price</p>
     <p>Bedrooms: @Model.Bedrooms</p>
     <p>Rules: @Model.Rules</p>
+    
+    @if (!string.IsNullOrEmpty(Model.PhotoPath))
+    {
+        <img src="@Model.PhotoPath" alt="Photo of @Model.Name" style="width: 300px; height: auto;" />
+    }
 
     <form method="get" action="/reservations/new">
         <input type="hidden" name="spaceId" value="@Model.Id" />
