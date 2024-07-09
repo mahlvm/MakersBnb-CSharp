@@ -1,6 +1,13 @@
 /* _content/MakersBnB/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* site.css */
+
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+
+body[b-8pjbnv0ddd] {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #AC8B8A;   
+}
 
 a.navbar-brand[b-8pjbnv0ddd] {
   white-space: normal;
@@ -9,24 +16,25 @@ a.navbar-brand[b-8pjbnv0ddd] {
 }
 
 a[b-8pjbnv0ddd] {
-  color: #0077cc;
+  color: #AC8B8A;  /* Atualiza a cor dos links */
 }
 
 .btn-primary[b-8pjbnv0ddd] {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #AC8B8A;
+  border-color: #AC8B8A;
 }
 
 .nav-pills .nav-link.active[b-8pjbnv0ddd], .nav-pills .show > .nav-link[b-8pjbnv0ddd] {
   color: #fff;
-  background-color: #1b6ec2;
+  background-color: #AC8B8A;
   border-color: #1861ac;
 }
 
 .border-top[b-8pjbnv0ddd] {
   border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom[b-8pjbnv0ddd] {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -46,4 +54,11 @@ button.accept-policy[b-8pjbnv0ddd] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+
+
+/* Definindo a cor dos links dentro da navbar-custom */
+.navbar-custom .nav-link[b-8pjbnv0ddd] {
+  color: #AC8B8A;
 }

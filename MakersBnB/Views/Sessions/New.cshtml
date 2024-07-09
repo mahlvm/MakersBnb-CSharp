@@ -1,14 +1,33 @@
-<form action="/Sessions" method="post">
-    <fieldset>
-        <legend>Login</legend>
-        <div>
-        <label>Email <input type="text" name="email" /></label>
-        </div>
-        <div>
-        <label>Password <input type="text" name="password" /></label>
-        </div>
-        <div>
-        <input type="submit" value="Submit" class="submit" />
-        </div>
-    </fieldset>
-    </form>
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MakersBnB</title>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="login-box">
+        <form action="/Sessions" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <div>
+                    
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                </div>
+                <div>
+                    
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="submit" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets/MakersBnB.bundle.scp.css"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/createaccount.css",
+      "PackagePath": "staticwebassets/css/createaccount.css"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/spaces.css",
+      "PackagePath": "staticwebassets/css/spaces.css"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/ponybnb.png",
+      "PackagePath": "staticwebassets/images/ponybnb.png"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/js/site.js",
@@ -245,8 +261,16 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
+      "PackagePath": "staticwebassets/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg",
       "PackagePath": "staticwebassets/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg",
+      "PackagePath": "staticwebassets/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MakersBnB.Microsoft.AspNetCore.StaticWebAssets.props",

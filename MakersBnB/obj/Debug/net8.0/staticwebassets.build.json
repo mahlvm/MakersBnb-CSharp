@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DtI8O0OIQGL7PAQPhmI9xTHYOn2y8w+PoIu71Gc7Ie8=",
+  "Hash": "Ba3hGp8db/WTU8CLRl3Qgspz0GEjCTL0JwziDBPSpjk=",
   "Source": "MakersBnB",
   "BasePath": "_content/MakersBnB",
   "Mode": "Default",
@@ -55,6 +55,44 @@
       "OriginalItemSpec": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/obj/Debug/net8.0/scopedcss/projectbundle/MakersBnB.bundle.scp.css"
     },
     {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/createaccount.css",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "css/createaccount.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/createaccount.css"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/login.css",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/login.css"
+    },
+    {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/site.css",
       "SourceId": "MakersBnB",
       "SourceType": "Discovered",
@@ -74,6 +112,25 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/spaces.css",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "css/spaces.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/spaces.css"
+    },
+    {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/favicon.ico",
       "SourceId": "MakersBnB",
       "SourceType": "Discovered",
@@ -91,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/ponybnb.png",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "images/ponybnb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/ponybnb.png"
     },
     {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/js/site.js",
@@ -1195,6 +1271,25 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg"
+    },
+    {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg",
       "SourceId": "MakersBnB",
       "SourceType": "Discovered",
@@ -1212,6 +1307,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg"
     }
   ]
 }

@@ -4,47 +4,49 @@
 <html>
 <head>
     <title>List of Spaces</title>
+    <link rel="stylesheet" href="~/css/spaces.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
-    <h1>List of Spaces</h1>
+    <div class="container">
+        <h1 class="text-start mb-4">List of Spaces</h1> 
 
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Bedrooms</th>
-                <th>Rules</th>
-                <th>Photo</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
+        <div class="row mb-4">
+            <div class="col">
+            <a href="/Spaces/New" class="btn btn-primary float-start" style="background-color: #FE6D6C; color: white; border-color: transparent;"
+            onmouseover="this.style.backgroundColor='#D94C4B';" onmouseout="this.style.backgroundColor='#FE6D6C';">
+            Create New Space
+            </a>
+
+            </div>
+        </div>
+
+        <div class="row">
             @foreach (var space in Model)
             {
-                <tr>
-                    <td>@space.Name</td>
-                    <td>@space.Description</td>
-                    <td>@space.Price</td>
-                    <td>@space.Bedrooms</td>
-                    <td>@space.Rules</td>
-                    <td>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="space-box">
                         @if (!string.IsNullOrEmpty(space.PhotoPath))
                         {
-                            <img src="@space.PhotoPath" alt="Photo of @space.Name" style="width: 100px; height: auto;" />
+                            <div class="image-container">
+                                <img src="@space.PhotoPath" alt="Photo of @space.Name" class="img-fluid rounded-top" />
+                            </div>
                         }
-                    </td>
-                    <td>
-                        <a href="/Spaces/@space.Id">View</a>
-                    </td>
-                </tr>
+                        <div class="details">
+                            <h2>@space.Name</h2>
+                            <p class="price">@space.Price GBP</p>
+                        </div>
+                        <div class="actions">
+                            <a href="/Spaces/@space.Id" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
             }
-        </tbody>
-    </table>
+        </div>
 
-    <div>
-        <a href="/Spaces/New" class="btn btn-primary">Create New Space</a>
     </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
