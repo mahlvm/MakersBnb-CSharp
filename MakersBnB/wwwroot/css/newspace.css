@@ -1,0 +1,59 @@
+.new-space-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new-space-box legend {
+    color: #534343;
+    font-size: 2.2rem;
+}
+
+.new-space-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.new-space-box input[type="text"],
+.new-space-box input[type="number"],
+.new-space-box input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.new-space-box input[type="number"].no-spinner::-webkit-outer-spin-button,
+.new-space-box input[type="number"].no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.new-space-box input[type="number"].no-spinner {
+    -moz-appearance: textfield;
+}
+
+.new-space-box input[type="submit"] {
+    background-color: #FE6D6C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-space-box input[type="submit"]:hover {
+    background-color: #333;
+}

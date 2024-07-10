@@ -1,36 +1,36 @@
-@model MakersBnB.Models.Space
-
-<!DOCTYPE html>
 <html>
 <head>
     <title>New Space</title>
+    <link rel="stylesheet" href="~/css/newspace.css" asp-append-version="true" />
 </head>
 <body>
-    <form action="/Spaces" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <legend>List a space</legend>
-            <div>
-                <label>Name <input type="text" name="Name" /></label>
-            </div>
-            <div>
-                <label>Description <input type="text" name="Description" /></label>
-            </div>
-            <div>
-                <label>Bedrooms <input type="number" name="Bedrooms" /></label>
-            </div>
-            <div>
-                <label>Price <input type="number" name="Price" /></label>
-            </div>
-            <div>
-                <label>Rules <input type="text" name="Rules" /></label>
-            </div>
-            <div>
-                <label>Photo <input type="file" name="Photo" /></label>
-            </div>
-            <div>
-                <input type="submit" value="Submit" class="submit" />
-            </div>
-        </fieldset>
-    </form>
+    <div class="new-space-box">
+        <form action="/Spaces" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>List a space</legend>
+                <div>
+                    <input type="text" name="Name" id="Name" placeholder="Name" />
+                </div>
+                <div>
+                    <input type="text" name="Description" id="Description" placeholder="Description" />
+                </div>
+                <div>
+                    <input type="number" name="Bedrooms" id="Bedrooms" placeholder="Bedrooms" />
+                </div>
+                <div>
+                    <input type="number" name="Price" id="Price" placeholder="£ night" class="no-spinner" />
+                </div>
+                <div>
+                    <input type="text" name="Rules" id="Rules" placeholder="Rules" />
+                </div>
+                <div>
+                    <input type="file" name="Photo" id="Photo" />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="submit" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

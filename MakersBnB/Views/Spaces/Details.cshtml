@@ -1,25 +1,34 @@
-@model MakersBnB.Models.Space
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Space Details</title>
+    <link rel="stylesheet" type="text/css" href="~/css/details.css">
+
 </head>
 <body>
-    <h1>@Model.Name</h1>
-    <p>@Model.Description</p>
-    <p>Price: @Model.Price</p>
-    <p>Bedrooms: @Model.Bedrooms</p>
-    <p>Rules: @Model.Rules</p>
-    
-    @if (!string.IsNullOrEmpty(Model.PhotoPath))
-    {
-        <img src="@Model.PhotoPath" alt="Photo of @Model.Name" style="width: 300px; height: auto;" />
-    }
-
-    <form method="get" action="/reservations/new">
-        <input type="hidden" name="spaceId" value="@Model.Id" />
-        <button type="submit">Reserve</button>
-    </form>
+    <div class="container">
+        @if (!string.IsNullOrEmpty(Model.PhotoPath))
+        {
+            <img src="@Model.PhotoPath" alt="Photo of @Model.Name" class="photo" />
+        }
+        <h1 class="title">@Model.Name</h1>
+        <div class="details">
+            <div class="details-left">
+                <p>@Model.Description</p>
+                <p>Rules: @Model.Rules</p>
+                <p>Bedrooms: @Model.Bedrooms</p>
+            </div>
+            <div class="details-right">
+                <div class="price-box">
+                    <p class="price">£ @Model.Price night</p>
+                    <form method="get" action="/reservations/new">
+                    <input type="hidden" name="spaceId" value="@Model.Id" />
+                    <button type="submit" class="reserve-button">Reserve</button>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>

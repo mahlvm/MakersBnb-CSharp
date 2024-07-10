@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ba3hGp8db/WTU8CLRl3Qgspz0GEjCTL0JwziDBPSpjk=",
+  "Hash": "dfxN1Lfuu988IAO6MPvARvVPvz0Qb4vRlC9QKntL6hc=",
   "Source": "MakersBnB",
   "BasePath": "_content/MakersBnB",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot/css/createaccount.css"
     },
     {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/details.css",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/details.css"
+    },
+    {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/login.css",
       "SourceId": "MakersBnB",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/login.css"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/newspace.css",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "css/newspace.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/newspace.css"
     },
     {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/site.css",
@@ -1269,6 +1307,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp",
+      "SourceId": "MakersBnB",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/",
+      "BasePath": "_content/MakersBnB",
+      "RelativePath": "uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp"
     },
     {
       "Identity": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",

@@ -1,0 +1,62 @@
+
+
+.photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.title {
+    color: #534343;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.details-left {
+    width: 60%;
+}
+
+.details-right {
+    width: 20%;
+}
+
+.details-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    color: #333;
+}
+
+.reserve-button {
+    background-color: #FE6D6C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #333;
+}

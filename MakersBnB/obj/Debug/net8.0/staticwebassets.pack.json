@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets/css/createaccount.css"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/details.css",
+      "PackagePath": "staticwebassets/css/details.css"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/login.css",
       "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/newspace.css",
+      "PackagePath": "staticwebassets/css/newspace.css"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/site.css",
@@ -259,6 +267,10 @@
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp",
+      "PackagePath": "staticwebassets/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
