@@ -1,4 +1,4 @@
-# Chitter: Twitter-like Application
+# PonyBnb: AirBnb  -like Application
 
 
 This solo project a work in progress developed as part of the Makers Bootcamp  C# Fundamentals and Web Application. This project aims to create a  MVP where users can create accounts, log in, look a list os space and a page of details, post new spaces, reservated space, and logout.
@@ -29,7 +29,7 @@ For this app we will be using the following tech stack:
 
 |   Description    |   Page Image    |
 |:------------:|:----------------:|
-|Account Creation Page| ![](static/images/chitter-login.png)|
+|Account Creation Page| ![](/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/createaccount-page.png)|
 |Login Page| ![](static/images/chitter-login-error.png)|
 |Home Page| ![](static/images/chitter-posts.png)|
 |Details Page| ![](static/images/chitter-create-account.png)|
