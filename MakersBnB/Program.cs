@@ -15,25 +15,25 @@ builder.Services.AddScoped<MakersBnB.ActionFilters.AuthenticationFilter>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage(); // Mostra página de erro detalhada em ambiente de desenvolvimento
+    app.UseDeveloperExceptionPage(); 
 }
 else
 {
-    app.UseExceptionHandler("/Home/Error"); // Redireciona para página de erro padrão em ambiente de produção
-    app.UseHsts(); // Aplica HSTS (HTTP Strict Transport Security)
+    app.UseExceptionHandler("/Home/Error"); 
+    app.UseHsts(); 
 }
 
-app.UseHttpsRedirection(); // Redireciona todas as requisições HTTP para HTTPS (se aplicável)
-app.UseStaticFiles(); // Permite o uso de arquivos estáticos como HTML, CSS, imagens, etc.
+app.UseHttpsRedirection(); 
+app.UseStaticFiles(); 
 
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.UseSession(); // Ativa o uso de sessões
+app.UseSession(); 
 
 app.MapControllerRoute(
     name: "default",
