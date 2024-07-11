@@ -37,12 +37,44 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/confirmation.png",
+      "PackagePath": "staticwebassets/images/confirmation.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/createaccount-page.png",
+      "PackagePath": "staticwebassets/images/createaccount-page.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/home-page.png",
+      "PackagePath": "staticwebassets/images/home-page.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/login-page.png",
+      "PackagePath": "staticwebassets/images/login-page.png"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/logofundoescuro.png",
       "PackagePath": "staticwebassets/images/logofundoescuro.png"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/newspace-page.png",
+      "PackagePath": "staticwebassets/images/newspace-page.png"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/ponybnb.png",
       "PackagePath": "staticwebassets/images/ponybnb.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/ponybnbwhite.png",
+      "PackagePath": "staticwebassets/images/ponybnbwhite.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/reservation.png",
+      "PackagePath": "staticwebassets/images/reservation.png"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/space-details.png",
+      "PackagePath": "staticwebassets/images/space-details.png"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/js/site.js",
@@ -277,8 +309,28 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/06614712-f7e1-4549-b22c-cb8f2cdde935_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
+      "PackagePath": "staticwebassets/uploads/06614712-f7e1-4549-b22c-cb8f2cdde935_casa-bradford-rd-land-800-497-80-cropped-1695.jpg"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp",
       "PackagePath": "staticwebassets/uploads/12309f78-d730-4aaf-9df9-1b40e9f35c00_012c2934-0265-48b2-af94-a3b115eddba1.jpeg.webp"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/1a8e7645-1f5f-4366-bd10-02899ce00139_IMG_2576.HEIC",
+      "PackagePath": "staticwebassets/uploads/1a8e7645-1f5f-4366-bd10-02899ce00139_IMG_2576.HEIC"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/2c1b26b4-70ff-402d-9ca7-ae0fc61b595d_2ce2f829-7965-479a-af98-c5a84824ce06.jpg.webp",
+      "PackagePath": "staticwebassets/uploads/2c1b26b4-70ff-402d-9ca7-ae0fc61b595d_2ce2f829-7965-479a-af98-c5a84824ce06.jpg.webp"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/329d0ec1-d0d1-450e-b95a-5f18b62baac5_a749a19b5682568d87b23ba71cadf6cd.jpg",
+      "PackagePath": "staticwebassets/uploads/329d0ec1-d0d1-450e-b95a-5f18b62baac5_a749a19b5682568d87b23ba71cadf6cd.jpg"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/4920eaf6-021b-4f2c-88a2-3311970d99cf_a3ffa114-1f3a-43df-8829-2622cf9d6a4a.jpeg.webp",
+      "PackagePath": "staticwebassets/uploads/4920eaf6-021b-4f2c-88a2-3311970d99cf_a3ffa114-1f3a-43df-8829-2622cf9d6a4a.jpeg.webp"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/7b98e019-973d-4875-9af8-4cc8b576bc54_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
@@ -289,8 +341,20 @@
       "PackagePath": "staticwebassets/uploads/7e275750-9dea-4b7e-9a1e-5e13472fc8b2_014-casa-dotta-galeria-733.jpg"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/88f46e0e-8b02-4c44-988e-c7ecde485aa4_casa-bradford-rd-land-800-497-80-cropped-1695.jpg",
+      "PackagePath": "staticwebassets/uploads/88f46e0e-8b02-4c44-988e-c7ecde485aa4_casa-bradford-rd-land-800-497-80-cropped-1695.jpg"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/8e2ab56b-5d7a-44e3-83b3-c7a6f34d1fe1_014-casa-dotta-galeria-733.jpg",
+      "PackagePath": "staticwebassets/uploads/8e2ab56b-5d7a-44e3-83b3-c7a6f34d1fe1_014-casa-dotta-galeria-733.jpg"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg",
       "PackagePath": "staticwebassets/uploads/ca1a3d56-26cd-4b8b-9259-e7cb2961a4e6_a749a19b5682568d87b23ba71cadf6cd.jpg"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/uploads/df96b022-0d03-4843-b2ca-5ad1ecb931a7_c7aaa8fa-f3ae-47c7-a377-afe02ce6d8f4.jpg.webp",
+      "PackagePath": "staticwebassets/uploads/df96b022-0d03-4843-b2ca-5ad1ecb931a7_c7aaa8fa-f3ae-47c7-a377-afe02ce6d8f4.jpg.webp"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MakersBnB.Microsoft.AspNetCore.StaticWebAssets.props",
