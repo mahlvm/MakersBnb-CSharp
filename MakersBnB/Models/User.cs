@@ -9,8 +9,8 @@ public class User
     public string Email {get; set;}
     public string Password {get; set;}
 
-    public ICollection<Space> Spaces { get; } = new List<Space>(); // Collection of spaces owned by the user
-    public ICollection<Reservation> Reservations { get; } = new List<Reservation>(); // Collection of reservations made by the user
+    public ICollection<Space> Spaces { get; } = new List<Space>(); 
+    public ICollection<Reservation> Reservations { get; } = new List<Reservation>(); 
 
 
     public User(string username, string email, string password) {
