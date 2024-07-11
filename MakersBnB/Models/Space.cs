@@ -23,10 +23,10 @@ namespace MakersBnB.Models
 
         public string? PhotoPath { get; set; }
 
-        public int UserId { get; set; } // Foreign key for User
-        public User User { get; set; } = null!; // Navigation property to User
+        public int UserId { get; set; } 
+        public User User { get; set; } = null!; 
 
-        public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>(); // Collection of reservations
+        public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>(); 
 
 
         public Space(string name, string description, int price, int bedrooms, string rules)
