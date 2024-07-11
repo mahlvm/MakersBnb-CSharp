@@ -38,12 +38,12 @@ namespace MakersBnB.Controllers
         [ServiceFilter(typeof(AuthenticationFilter))]
         public IActionResult Create(Space space, IFormFile Photo)
         {
-            // Obtém o UserId da sessão
+            
             int? userId = HttpContext.Session.GetInt32("user_id");
             
             if (userId == null)
             {
-                // Se o usuário não está autenticado, redireciona para a página de login
+                
                 return new RedirectResult("/Sessions/New");
             }
 
@@ -53,7 +53,7 @@ namespace MakersBnB.Controllers
                 var uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(Photo.FileName);
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                // Certifique-se de que a pasta de uploads existe
+               
                 if (!Directory.Exists(uploadsFolder))
                 {
                     Directory.CreateDirectory(uploadsFolder);
@@ -67,7 +67,7 @@ namespace MakersBnB.Controllers
                 space.PhotoPath = "/uploads/" + uniqueFileName;
             }
 
-            space.UserId = userId.Value; // Define o UserId do Space
+            space.UserId = userId.Value; 
 
             using (var dbContext = new MakersBnBDbContext())
             {
