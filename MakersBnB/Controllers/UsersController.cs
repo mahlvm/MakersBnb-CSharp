@@ -32,11 +32,11 @@ namespace MakersBnB.Controllers
         public IActionResult Create(User user)
         {   
         MakersBnBDbContext dbContext = new MakersBnBDbContext();
-        // Here's where we finally use the dbContext
+       
         dbContext.Users.Add(user);
         dbContext.SaveChanges();
 
-        // redirect to "/Spaces"
+    
         return new RedirectResult("/Spaces");
         }
     }
