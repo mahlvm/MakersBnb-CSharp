@@ -28,7 +28,7 @@ namespace MakersBnB.Models
 
         public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>(); // Collection of reservations
 
-        // Construtor para inicialização básica
+
         public Space(string name, string description, int price, int bedrooms, string rules)
         {
             Name = name;
@@ -38,7 +38,7 @@ namespace MakersBnB.Models
             Rules = rules;
         }
 
-        // Construtor vazio requerido pelo Entity Framework
+    
         public Space() { }
     }
 }
