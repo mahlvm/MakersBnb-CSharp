@@ -1,12 +1,12 @@
 # PonyBnb: AirBnb  -like Application
 
 
-This solo project a work in progress developed as part of the Makers Bootcamp  C# Fundamentals and Web Application. This project aims to create a  MVP where users can create accounts, log in, look a list os space and a page of details, post new spaces, reservated space, and logout.
+This solo project is a work in progress developed as part of the Makers Bootcamp C# Fundamentals and Web Application course. The project aims to create an MVP where users can create accounts, log in, view a list of spaces and their details, post new spaces, reserve spaces, and log out.
 
 Overview
 Challenge Source: Makers Bootcamp
 Project Type: Airbnb-like Application
-Features: Account creation, login, list of space, space details page, post new spaces, reservated space, and logout.
+Features: Account creation, login, list of spaces, space details page, post new spaces, reserve spaces, and logout.
 
 
 ## Tech Stack
@@ -29,8 +29,10 @@ For this app we will be using the following tech stack:
 
 |   Description    |   Page Image    |
 |:------------:|:----------------:|
-|Account Creation Page| ![](/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/createaccount-page.png)|
-|Login Page| ![](static/images/chitter-login-error.png)|
-|Home Page| ![](static/images/chitter-posts.png)|
-|Details Page| ![](static/images/chitter-create-account.png)|
-|New Space Page| ![](static/images/chitter-create-post.png)|
+|Account Creation Page| ![](MakersBnB/wwwroot/images/createaccount-page.png)|
+|Login Page| ![](MakersBnB/wwwroot/images/login-page.png)|
+|Home Page| ![](MakersBnB/wwwroot/images/home-page.png)|
+|Details Page| ![](MakersBnB/wwwroot/images/space-details.png)|
+|New Space Page| ![](MakersBnB/wwwroot/images/newspace-page.png)|
+|Reservation Page| ![](MakersBnB/wwwroot/images/reservation.png)|
+|Confirmation Page| ![](MakersBnB/wwwroot/images/confirmation.png)|
