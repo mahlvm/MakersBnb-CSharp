@@ -1,4 +1,37 @@
-/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.split-container {
+    display: flex;
+    height: 100vh; /* Altura total da viewport */
+}
+
+.left-side {
+    flex: 1; /* Ocupa metade da tela */
+    background-color: #FE6D6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para centralizar a imagem */
+}
+
+.logo {
+    max-width: 70%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.right-side {
+    flex: 1; /* Ocupa metade da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .login-box {
     background-color: #fff;
@@ -8,15 +41,11 @@
     max-width: 300px;
     width: 100%;
     text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .login-box legend {
     color: #534343;
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 .login-box label {

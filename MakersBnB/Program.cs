@@ -16,24 +16,27 @@ builder.Services.AddScoped<MakersBnB.ActionFilters.AuthenticationFilter>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseDeveloperExceptionPage(); // Mostra página de erro detalhada em ambiente de desenvolvimento
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error"); // Redireciona para página de erro padrão em ambiente de produção
+    app.UseHsts(); // Aplica HSTS (HTTP Strict Transport Security)
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseHttpsRedirection(); // Redireciona todas as requisições HTTP para HTTPS (se aplicável)
+app.UseStaticFiles(); // Permite o uso de arquivos estáticos como HTML, CSS, imagens, etc.
 
 app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession(); // Ativa o uso de sessões
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.UseSession();
 
 app.Run();

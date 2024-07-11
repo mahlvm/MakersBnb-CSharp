@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/createaccount.css"
     },
     {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/createreservation.css",
+      "PackagePath": "staticwebassets/css/createreservation.css"
+    },
+    {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/css/details.css",
       "PackagePath": "staticwebassets/css/details.css"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/logofundoescuro.png",
+      "PackagePath": "staticwebassets/images/logofundoescuro.png"
     },
     {
       "Id": "/Users/marcelamoreti/Desktop/Dev-Work/CSharp/development-/makersbnb/MakersBnB/wwwroot/images/ponybnb.png",

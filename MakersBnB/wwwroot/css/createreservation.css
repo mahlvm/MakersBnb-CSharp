@@ -1,0 +1,49 @@
+.create-reservation-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create-reservation-box h1 {
+    color: #534343;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.create-reservation-box label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.create-reservation-box input[type="date"],
+.create-reservation-box input[type="submit"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-reservation-box input[type="submit"] {
+    background-color: #FE6D6C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-reservation-box input[type="submit"]:hover {
+    background-color: #333;
+}
