@@ -1,4 +1,4 @@
-# PonyBnb: AirBnb  -like Application
+# PonyBnb: AirBnb-like Application
 
 
 This solo project is a work in progress developed as part of the Makers Bootcamp C# Fundamentals and Web Application course. The project aims to create an MVP where users can create accounts, log in, view a list of spaces and their details, post new spaces, reserve spaces, and log out.
