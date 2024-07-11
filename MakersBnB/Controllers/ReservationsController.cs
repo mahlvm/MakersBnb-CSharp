@@ -62,18 +62,18 @@ namespace MakersBnB.Controllers
 
             if (userId == null)
             {
-                // Se o usuário não está autenticado, redireciona para a página de login
+                
                 return RedirectToAction("New", "Sessions");
             }
 
             var reservation = viewModel.Reservation;
             reservation.UserId = userId.Value;
 
-            // Define o SpaceId da reserva
+            
             var space = dbContext.Spaces.Find(reservation.SpaceId);
             if (space == null)
             {
-                // Se o espaço não existe, redireciona para a página de criação de reserva com erro
+               
                 ModelState.AddModelError("", "Invalid space.");
                 var newViewModel = new ReservationViewModel
                 {
